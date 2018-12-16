@@ -8,15 +8,12 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
-import frc.robot.Robot;
+package org.usfirst.frc.team6239.robot;
 
-/**
- * An example command.  You can replace me with your own command.
- */
-public class ExampleCommand extends Command {
-  public ExampleCommand() {
-    // Use requires() here to declare subsystem dependencies
-    requires(Robot.m_subsystem);
+
+public class LiftComm extends Command {
+  public LiftComm() {
+  
   }
 
   // Called just before this Command runs the first time
@@ -27,6 +24,7 @@ public class ExampleCommand extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
+  Robot.LiftSub.Run();
   }
 
   // Make this return true when this Command no longer needs to run execute()
